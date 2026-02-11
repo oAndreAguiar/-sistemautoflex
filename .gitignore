@@ -1,0 +1,39 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# IDEs e editores
+.vscode/
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+
+# Java / Maven / Quarkus
+target/
+**/target/
+*.class
+
+# Node / React / Vite
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+.cache/
+**/.cache/
+coverage/
+**/coverage/
+
+# Cypress (artefatos de execução)
+cypress/screenshots/
+cypress/videos/
+**/cypress/screenshots/
+**/cypress/videos/
+
+# Variáveis de ambiente e segredos
+.env
+.env.*

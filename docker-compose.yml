@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres:16
+    container_name: inventory-postgres
+    environment:
+      POSTGRES_DB: inventory
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
