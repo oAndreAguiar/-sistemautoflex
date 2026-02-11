@@ -1,4 +1,4 @@
-# Sistema de Controle de Produção e Estoque (Teste Prático)
+# Sistema de controle de produção e estoque (Teste Prático)
 
 Aplicação web para controle de produtos, matérias-primas (estoque) e a associação (BOM) de quais matérias-primas e quantidades são necessárias para produzir cada produto.  
 A aplicação também disponibiliza consultas para verificar quais produtos podem ser produzidos com base no estoque atual de matérias-primas.
@@ -61,7 +61,7 @@ Portas padrão:
 - Maven (ou usar `./mvnw`)
 
 ---
-### Banco de Dados (MySQL local)
+### Banco de dados (MySQL local)
 
 Crie o banco `inventory` (via MySQL Workbench ou terminal):
 ´´´´sql
@@ -92,7 +92,7 @@ http://localhost:8080/q/swagger-ui
 
 
 ---
-### Executar o Front-end (React)
+### Executar o front-end (React)
 ´´´´
 cd frontend
 npm install
