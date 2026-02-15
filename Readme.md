@@ -78,17 +78,13 @@ senha: a1b2c3d4
 ---
 ### Como executar
 
-Executar o Back-end (Quarkus API)
-cd code-with-quarkus
-./mvnw quarkus:dev
+Executar o Back-end (Quarkus API):
+- cd code-with-quarkus
+- ./mvnw quarkus:dev
 
 
 API disponível em:
 http://localhost:8080
-Health check:
-http://localhost:8080/q/health
-Swagger UI:
-http://localhost:8080/q/swagger-ui
 
 
 ---
