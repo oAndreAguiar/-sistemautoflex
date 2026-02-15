@@ -61,11 +61,33 @@ Portas padrão:
 - Maven (ou usar `./mvnw`)
 
 ---
-### Banco de dados (MySQL local)
+## Banco de Dados (MySQL local)
 
-Crie o banco `inventory` (via MySQL Workbench ou terminal):
-´´´´sql
-CREATE DATABASE inventory;
+Este projeto usa MySQL rodando localmente. Antes de iniciar a API, garanta que o servidor MySQL está em execução.
+
+### 1) Criar banco e usuário do projeto
+
+No MySQL (ex.: MySQL Workbench), execute:
+
+```sql
+CREATE DATABASE IF NOT EXISTS inventory;
+
+CREATE USER IF NOT EXISTS 'inventory_user'@'localhost' IDENTIFIED BY 'SUA_SENHA_AQUI';
+
+GRANT ALL PRIVILEGES ON inventory.* TO 'inventory_user'@'localhost';
+
+FLUSH PRIVILEGES;
+
+ - Substitua SUA_SENHA_AQUI por uma senha escolhida por você no seu computador. - 
+
+### 2) Configurar a senha 
+
+O arquivo application.properties lê a senha via variável de ambiente, para evitar expor credenciais no repositório.
+
+No Windows (PowerShell), antes de iniciar o back-end rode:
+
+$env:DB_USER="inventory_user"
+$env:DB_PASS="SUA_SENHA_AQUI"
 ´´´´
 
 Configuração padrão (definida no application.properties):
