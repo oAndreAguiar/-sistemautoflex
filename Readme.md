@@ -93,8 +93,6 @@ Configuração padrão (definida no application.properties):
 host: localhost
 porta: 3306
 database: inventory
-usuário: root
-senha: a1b2c3d4
 
 ---
 ### Como executar
