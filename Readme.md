@@ -25,8 +25,8 @@ A aplicação também disponibiliza consultas para verificar quais produtos pode
 
 O projeto segue o conceito de API separada do Front-end:
 
-- `code-with-quarkus/`: API REST (Quarkus)
-- `frontend/`: Interface Web (React)
+- code-with-quarkus/: API REST (Quarkus)
+- frontend/: Interface Web (React)
 
 Portas padrão:
 - API: `http://localhost:8080`
@@ -69,7 +69,7 @@ Este projeto usa MySQL rodando localmente. Antes de iniciar a API, garanta que o
 
 No MySQL (ex.: MySQL Workbench), execute:
 
-```sql
+
 CREATE DATABASE IF NOT EXISTS inventory;
 
 CREATE USER IF NOT EXISTS 'inventory_user'@'localhost' IDENTIFIED BY 'SUA_SENHA_AQUI';
