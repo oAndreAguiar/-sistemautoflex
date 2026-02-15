@@ -69,7 +69,6 @@ Este projeto usa MySQL rodando localmente. Antes de iniciar a API, garanta que o
 
 No MySQL (ex.: MySQL Workbench), execute:
 
-
 CREATE DATABASE IF NOT EXISTS inventory;
 
 CREATE USER IF NOT EXISTS 'inventory_user'@'localhost' IDENTIFIED BY 'SUA_SENHA_AQUI';
